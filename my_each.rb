@@ -1,25 +1,23 @@
 def my_each(array) # put argument(s) here
   # code here
-end
-
-
-
-def hello_t(array)
-    if block_given?
+  if block_given?
     i = 0 
     
     while i < array.length 
-    yield array[i]
+      yield array[i]
       i = i + 1 
-    end 
-    array
+    end
+    array 
   else
-    puts "Hey! No block was given!"
+    puts "Nothing given"
+  end
+    
 end
 
-# call your method here!
-hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if  name.start_with?("T")
-    puts "H, #{name}"
-  end
-end
+
+array = [1, 2, 3, 4]
+my_each(array) do |i|
+  puts i
+end 
+
+
