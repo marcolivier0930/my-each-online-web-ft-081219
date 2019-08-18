@@ -9,7 +9,7 @@ def my_each(array) # put argument(s) here
     end
     array 
   else
-    puts "Nothing given"
+     "Nothing given"
   end
     
 end
@@ -17,7 +17,7 @@ end
 
 array = [1, 2, 3, 4]
 my_each(array) do |i|
-  puts i
+   i
 end 
 
 
